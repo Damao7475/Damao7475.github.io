@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Damao's Blog
 subtitle: ''
 description: ''
-keywords:
-author: John Doe
-language: en
+keywords: 
+author: Damao
+language: zh-CN
 timezone: ''
 
 # URL
@@ -96,9 +96,29 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:Damao7475/Damao7475.github.io
+  branch: main
+
+# hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10
+
+# hexo-symbols-count-time
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 2    
+  wpm: 275
+  suffix: "mins."
